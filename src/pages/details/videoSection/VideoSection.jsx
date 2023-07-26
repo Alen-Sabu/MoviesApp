@@ -1,5 +1,5 @@
 import React from 'react';
-import "./VideoSection.scss";
+import "./style.scss";
 import { useSelector } from 'react-redux';
 import ContentWrapper from '../../../components/contentWrapper/ContentWrapper';
 import VideoPopup from '../../../components/videoPopup/VideoPopup';
