@@ -26,9 +26,9 @@ function App() {
     .then((res) => {
   
       const url = {
-        backdrop: res.images.secure_base_url + "original",
-        poster: res.images.secure_base_url + "original",
-        profile: res.images.secure_base_url + "original",
+        backdrop: res?.images.secure_base_url + "original",
+        poster: res?.images.secure_base_url + "original",
+        profile: res?.images.secure_base_url + "original",
       }
       dispatch(getApiConfiguration(url));
     })
@@ -44,7 +44,7 @@ function App() {
     })
 
     const data = await Promise.all(promises)
-    data.map(({genres}) =>{
+    data?.map(({genres}) =>{
       return genres.map((item) => (allGenres[item.id] = item))
     })
     dispatch(getGenres(allGenres))
