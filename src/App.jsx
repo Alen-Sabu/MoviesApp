@@ -30,6 +30,7 @@ function App() {
         poster: res?.images.secure_base_url + "original",
         profile: res?.images.secure_base_url + "original",
       }
+      console.log(url);
       dispatch(getApiConfiguration(url));
     })
   }
