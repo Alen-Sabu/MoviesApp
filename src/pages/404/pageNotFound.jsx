@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+
 import "./style.scss";
 
 import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
@@ -13,4 +14,5 @@ const PageNotFound = () => {
         </div>
     );
 };
+
 export default PageNotFound;
